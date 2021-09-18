@@ -21,8 +21,6 @@ export class PaymentPage {
 
       this.pedido = this.navParams.get('pedido');
 
-      console.log(this.pedido);
-
       this.formGroup = this.formBuilder.group({
         numeroDeParcelas: [1, Validators.required],
         "@type": ["pagamentoComCartao", Validators.required]
